@@ -49,7 +49,17 @@ cin >> z; //this allows the user to enter an input after it has been declared.
 b= z*c;
 cout<<"the output is ";
 cout<<b<<endl;
+
+// writing cin with string
+string mystr;
+cout << "Enter your name"<<endl;
+getline (cin, mystr);
+cout << "Hello!"<<mystr<<endl;
+cout << "What are u studying in school"<<endl;
+getline (cin, mystr);
+cout << "Wow "<<mystr<< "is a very nice field of study"<<endl;
 cout<<"thank you"<<endl;
+
 cout<<"    **    **     "<<endl;
 cout<<"   ****  ****    " <<endl;
 cout<<"  ************   " <<endl;
@@ -67,3 +77,17 @@ cout<<"       **        " <<endl;
 return 0;
 
 }
+
+// OVER-LOADED FUNCTIONS
+int operate (int a, int b)
+{
+ return (a*b);
+}
+float operate (float a, float b)
+{
+ return (a/b);
+} /*
+Over loaded functions depends on:
+- the type of the function
+- number of parameter
+*/
